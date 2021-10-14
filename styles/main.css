@@ -1,0 +1,234 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* add my own styling below */
+
+h1 {
+    font-size: 40px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+h1 a {
+    text-decoration: none;
+    color: white;
+}
+h1 a:hover {
+    color:lightgray;
+}
+
+h2 {
+    font-size: 19px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+h3 {
+    font-size: 18px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+h4 {
+    font-size: 16px;
+    padding-bottom: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    font-size: 15px;
+    line-height:24px;
+}
+
+small {
+    font-size: 12px;
+}
+
+body {
+    background-color: #9ca2a8;
+    color: rgb(85, 72, 72);
+    font-family: Arial;
+}
+
+#top-nav {
+    padding: 20px;
+    background-color:#5d85c0;
+    margin-bottom: 22px;
+}
+
+header nav a {
+    padding-right: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+header nav a:hover{
+    color: rgb(46, 39, 39);
+}
+
+footer nav a {
+    padding-right: 12px;
+    color: rgb(85, 72, 72);
+}
+
+footer nav a:hover{
+    color: black;
+}
+
+h1 a {
+    color: rgb(85, 72, 72);
+    color: white;
+}
+
+section {
+    padding: 20px;
+}
+
+.container {
+    margin-bottom: 22px;
+    padding: 10px;
+    width:100%;
+}
+
+.copyright{
+    float: left;
+    padding-right: 20px;
+}
+
+.primary-footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color:#d6edfa;
+    color: black;
+    margin-top: 30px;
+    float: right
+  }
+
+  .btn-primary {
+    background-color: rgb(79, 79, 192);
+    border-color: black;
+  }
+
+  .list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: rgb(79, 79, 192);
+    border-color: black;
+}
+
+  .accordion-button:not(.collapsed) {
+    color: white;
+    background-color: rgb(79, 79, 192);
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+  .accordion-item{
+    color: white;
+    background-color: rgba(110, 109, 109, 0.2);
+  }
+
+  * {
+      box-sizing: border-box;
+  }
+
+  [class*='col-'] {
+      float: left;
+  }
+
+  .row {
+      width: 100%;
+  }
+
+  .col-12 {
+      width: 100%
+  }
+
+  .col-6 {
+    width: 50%;
+}
+
+  .col-8 {
+      width: 66.66%;
+  }
+
+  .col-4 {
+      width: 33.33%;
+      text-align: center;
+  }
+
+* {
+    box-sizing: border-box;
+    column-width: 8.33%;
+   } 
+
+   @media only screen and (max-width: 768px) {
+    /* For mobile phones and tablets: */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    @media only screen and (min-width: 768px) {
+        .col-12 {
+            width: 100%
+        }
+      
+        .col-4 {
+            width: 33.33%
+        }
+    } 
+} 
